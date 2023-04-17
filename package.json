@@ -1,0 +1,22 @@
+{
+  "name": "remix-cloudflare-module-workers",
+  "version": "0.0.1",
+  "description": "Cloudflare module worker request handler for Remix",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xanderberkein",
+  "license": "MIT",
+  "dependencies": {
+    "@remix-run/cloudflare": "^1.15.0",
+    "@remix-run/cloudflare-workers": "^1.15.0",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@remix-run/eslint-config": "^1.15.0",
+    "@types/node": "^18.15.11",
+    "eslint": "^8.39.0"
+  }
+}
