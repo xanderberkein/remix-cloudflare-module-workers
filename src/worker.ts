@@ -13,8 +13,6 @@ interface Environment {
   __STATIC_CONTENT: KVNamespace<string>;
 }
 
-export type ModuleEnvironment = Environment;
-
 export function createEventHandler({
   build,
   getLoadContext,
@@ -37,8 +35,8 @@ export function createEventHandler({
   ) => {
     const event = {
       request,
-      waitUntil: ctx.waitUntil,
-      passThroughOnException: ctx.passThroughOnException,
+      waitUntil: ctx.waitUntil.bind(ctx),
+      passThroughOnException: ctx.passThroughOnException.bind(ctx),
     } as FetchEvent;
 
     let response = await handleAsset(event, build, {
