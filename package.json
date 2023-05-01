@@ -11,13 +11,15 @@
   "author": "xanderberkein",
   "license": "MIT",
   "dependencies": {
-    "@remix-run/cloudflare": "^1.15.0",
-    "@remix-run/cloudflare-workers": "^1.15.0",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
     "@remix-run/eslint-config": "^1.15.0",
     "@types/node": "^18.15.11",
     "eslint": "^8.39.0"
+  },
+  "peerDependencies": {
+    "@remix-run/cloudflare": ">=1.13.0",
+    "@remix-run/cloudflare-workers": ">=1.13.0"
   }
 }
