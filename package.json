@@ -1,7 +1,8 @@
 {
   "name": "remix-cloudflare-module-workers",
   "version": "1.0.0",
-  "description": "Cloudflare module worker request handler for Remix",
+  "description": "Use Remix with Cloudflare module Workers",
+  "keywords": ["remix", "cloudflare", "cloudflare-workers"],
   "main": "dist/index",
   "typings": "dist/index",
   "scripts": {
