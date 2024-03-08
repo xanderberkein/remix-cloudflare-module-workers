@@ -2,6 +2,10 @@
 
 Use [Remix](https://remix.run/) with [Cloudflare module workers](https://developers.cloudflare.com/workers/)
 
+> [!NOTE]
+> With Vite support in Remix for Cloudflare Pages, there is no real reason to run Remix on Cloudflare Workers still. If you're starting a new Remix project and want to run it on Cloudflare, check out the [official Remix docs on their Vite plugin](https://remix.run/docs/en/main/future/vite).
+> This library remains relevant for projects still on Remix 1.x.
+
 ## Motivation
 
 The official `remix-cloudflare-workers` adapter does not support Cloudflare Workers' [new Module Worker format](https://developers.cloudflare.com/workers/learning/migrating-to-module-workers/). Some of Workers' new features (like Durable Objects and D1) are not supported using the Service Worker syntax, making them inaccessible for use in your Remix app. This package adds compatibility with the new format.
